@@ -1,0 +1,39 @@
+// STUB: font
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+// STUB: colors
+$primary-color: #0D0D0F;
+$secondary-color: #FFFFFF;
+$text-color: #A5A5A5;
+$accent-color: #00CE79;
+$nav-text-color: #AFAFAF;
+$nav-bg-color: #161616; // also use for card bg
+$search-bg-color: #1E1E1E;
+$bagde-bg-color: #212529;
+$pagination-bg-color: #252525;
+
+// STUB: border radius
+$border-radii: (
+  'regular': 0.375rem,
+  'circle': 100%,
+);
+
+// STUB: font size
+$font-sizes: (
+  'fs-h2': calc(1.325rem + .9vw),
+  'fs-h3': 2.063rem,
+  // use as card title font size
+  'fs-h5': 1.25rem,
+  'fs-p': 1rem,
+  'fs-nav': 1.25rem,
+  // also use for pagination
+  'fs-btn': 1.125rem,
+  'fs-badge': 0.75rem,
+);
+
+// STUB: font weight
+$font-weights: (
+  'regular': 400,
+  'medium': 500,
+  'bold': 600,
+);

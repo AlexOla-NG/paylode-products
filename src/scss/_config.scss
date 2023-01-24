@@ -1,0 +1,65 @@
+// STUB: function returns weight
+@function weight($weight-name) {
+  @return map-get($font-weights , $weight-name)
+}
+
+// STUB: function returns font size
+@function size($size-name) {
+  @return map-get($font-sizes, $size-name)
+}
+
+// STUB: function returns border radius
+@function radius($radius-name) {
+  @return map-get($border-radii, $radius-name)
+}
+
+// STUB: create transition mixin
+@mixin transition-ease {
+  transition: all 0.3s ease-in-out;
+}
+
+@mixin transition-ease-fast {
+  transition: all 0.225s ease-in-out;
+}
+
+// STUB: create flex mixin
+@mixin flex-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin flex-align-center {
+  display: flex;
+  align-items: center;
+}
+
+// STUB: create media-query mixin
+@mixin media-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin media-xxl {
+  @media screen and (min-width: 2560px) {
+    @content;
+  }
+}
