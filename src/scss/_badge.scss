@@ -1,0 +1,12 @@
+.badge {
+  color: $secondary-color;
+  cursor: pointer;
+  font-size: size(fs-badge);
+  text-transform: capitalize;
+
+  span {
+    background-color: $bagde-bg-color;
+    border-radius: radius(regular);
+    padding: 0.313rem 0.75rem;
+  }
+}

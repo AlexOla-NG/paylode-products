@@ -1,6 +1,8 @@
-@import 'resets', 'config', 'variables', 'responsiveness'; // responsiveness should always be at the end
+@import 'resets', 'config', 'variables', 'loading', 'card', 'button', 'image-text', 'badge', 'paginate', 'responsiveness'; // responsiveness should always be at the end
 
 body {
+  background-color: $primary-color;
+  color: $text-color;
   font-family: system-ui,
     -apple-system,
     "Segoe UI",
@@ -11,4 +13,14 @@ body {
     sans-serif;
   font-size: 16px;
   font-weight: weight(regular);
+}
+
+// STUB: for debugging
+.debug-red-solid {
+  border: 1px solid red;
+}
+
+.App {
+  margin: 0 auto;
+  padding: 2rem 1rem 1rem;
 }

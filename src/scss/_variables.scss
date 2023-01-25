@@ -11,6 +11,8 @@ $nav-bg-color: #161616; // also use for card bg
 $search-bg-color: #1E1E1E;
 $bagde-bg-color: #212529;
 $pagination-bg-color: #252525;
+$border-color: #0000002d;
+$black-color: #000000;
 
 // STUB: border radius
 $border-radii: (
@@ -28,7 +30,7 @@ $font-sizes: (
   'fs-nav': 1.25rem,
   // also use for pagination
   'fs-btn': 1.125rem,
-  'fs-badge': 0.75rem,
+  'fs-badge': calc(0.95rem + 0.6vw),
 );
 
 // STUB: font weight

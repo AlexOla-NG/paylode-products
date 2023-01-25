@@ -1,0 +1,15 @@
+.image-text {
+  @include flex-column;
+  align-items: center;
+  gap: 0.5rem;
+
+  img {
+    border-radius: radius(circle);
+    object-fit: cover;
+  }
+
+  p {
+    text-transform: capitalize;
+  }
+
+}
