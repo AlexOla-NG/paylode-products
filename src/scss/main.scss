@@ -1,4 +1,4 @@
-@import 'resets', 'config', 'variables', 'loading', 'card', 'button', 'image-text', 'badge', 'paginate', 'responsiveness'; // responsiveness should always be at the end
+@import 'resets', 'config', 'variables', 'loading', 'card', 'button', 'image-text', 'badge', 'paginate', 'searchbar', 'navbar', 'responsiveness'; // responsiveness should always be at the end
 
 body {
   background-color: $primary-color;
@@ -15,12 +15,31 @@ body {
   font-weight: weight(regular);
 }
 
+a {
+  color: $text-color;
+  text-decoration: none;
+}
+
+button,
+input {
+  font-family: inherit;
+  font-size: inherit;
+}
+
 // STUB: for debugging
 .debug-red-solid {
   border: 1px solid red;
 }
 
+// STUB: for fluid layout
+.container {
+  padding: 0 calc(1.5rem * .5);
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .App {
-  margin: 0 auto;
-  padding: 2rem 1rem 1rem;
+  // margin: 0 auto;
+  // padding: 2rem 1rem 1rem;
 }

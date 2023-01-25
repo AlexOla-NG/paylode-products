@@ -1,0 +1,30 @@
+nav {
+  background-color: $nav-bg-color;
+  height: fit-content;
+  position: sticky;
+  top: 0px;
+  padding: 0.5rem 0;
+  z-index: 2;
+
+  .container {
+
+    a:first-of-type {
+      color: $secondary-color;
+      font-size: size(fs-nav);
+      font-weight: weight(medium);
+      padding: 0.3125rem 0;
+    }
+
+    .navbar-toggle {
+      border: none;
+      border-radius: radius(regular);
+      color: $secondary-color;
+      padding: 0.25rem 0.75rem;
+
+      &-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+      }
+
+    }
+  }
+}

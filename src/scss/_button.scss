@@ -3,10 +3,19 @@
   border: none;
   border-radius: 0.375rem;
   color: $black-color;
-  @include flex-align-center;
-  gap: 0.313rem;
-  font-weight: weight(medium);
+  cursor: pointer;
   font-size: size(fs-btn);
   padding: 0.5rem 0.7rem;
   text-transform: capitalize;
+}
+
+.icon-btn {
+  @include flex-align-center;
+  gap: 0.313rem;
+  font-weight: weight(medium);
+}
+
+.txt-btn {
+  font-weight: weight(regular);
+  font-size: size(fs-p);
 }
