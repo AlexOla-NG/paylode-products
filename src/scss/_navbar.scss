@@ -7,24 +7,56 @@ nav {
   z-index: 2;
 
   .container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 
-    a:first-of-type {
+    &>a {
       color: $secondary-color;
       font-size: size(fs-nav);
-      font-weight: weight(medium);
+      font-weight: bold;
       padding: 0.3125rem 0;
     }
 
     .navbar-toggle {
-      border: none;
+      border: 1px solid rgba(0, 0, 0, .1);
       border-radius: radius(regular);
       color: $secondary-color;
+      font-size: size(fs-nav);
+      line-height: 1;
       padding: 0.25rem 0.75rem;
 
       &-icon {
         background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 100%;
+        display: inline-block;
+        height: 1.5rem;
+        width: 1.5rem;
+        vertical-align: middle;
       }
 
+    }
+
+    .navbar-collapse {
+      flex-basis: 100%;
+      flex-grow: 1;
+
+      .navbar-items {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 0.5rem auto;
+        max-height: 100px;
+        overflow-y: auto;
+
+        &-active {
+          color: $secondary-color;
+          display: flex;
+          font-weight: bold;
+        }
+      }
     }
   }
 }
