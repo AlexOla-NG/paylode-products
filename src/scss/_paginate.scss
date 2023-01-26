@@ -17,6 +17,9 @@
 
   .selected {
     background-color: $accent-color;
-    color: $black-color;
+
+    a {
+      color: $black-color;
+    }
   }
 }

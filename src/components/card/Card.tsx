@@ -1,15 +1,24 @@
-import React from "react";
 import noImageFound from "../../assets/images/no-image-found.webp";
 import { convertTitleCase } from "../shared/helpers";
+import { ICard } from "./ICard";
 
-const Card = () => {
+const Card = ({ id, title, backdrop_path, handleNavigate }: ICard) => {
+  let imageUrl = `https://image.tmdb.org/t/p/w500/${backdrop_path}`;
+
+  const handleClick = () => {
+    handleNavigate(id);
+  };
   return (
-    <article className="card ">
+    <article className="card fade-in">
       <span>
-        <img src={noImageFound} alt="not found" loading="lazy" />
+        <img
+          src={backdrop_path === null ? noImageFound : imageUrl}
+          alt="not found"
+          loading="lazy"
+        />
       </span>
 
-      <h5>{convertTitleCase("not found")}</h5>
+      <h5 onClick={handleClick}>{title}</h5>
     </article>
   );
 };

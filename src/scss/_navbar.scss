@@ -40,12 +40,11 @@ nav {
     }
 
     .navbar-collapse {
-      flex-basis: 100%;
-      flex-grow: 1;
 
       .navbar-items {
         display: flex;
         flex-direction: column;
+        // align-items: center;
         gap: 1rem;
         margin: 0.5rem auto;
         max-height: 100px;
@@ -57,6 +56,16 @@ nav {
           font-weight: bold;
         }
       }
+    }
+
+    // STUB: toggle navbar controls
+    .collapse:not(.show) {
+      display: none
+    }
+
+    .show {
+      flex-basis: 100%;
+      flex-grow: 1;
     }
   }
 }

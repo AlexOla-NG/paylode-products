@@ -2,6 +2,10 @@
   .form-wrapper {
     max-width: 45rem;
   }
+
+  .container {
+    max-width: 45rem;
+  }
 }
 
 @include media-lg {
@@ -12,10 +16,43 @@
       width: 50%;
     }
   }
+
+  .container {
+    max-width: 71.25rem;
+  }
+
+  nav {
+    .container {
+      justify-content: normal;
+      gap: 1rem;
+
+      .navbar-toggle {
+        display: none;
+      }
+
+      .navbar-collapse {
+        display: flex !important;
+        flex-basis: auto;
+
+        .navbar-items {
+          flex-direction: row;
+        }
+      }
+
+      .show {
+        flex-basis: auto;
+        flex-grow: 0;
+      }
+    }
+  }
 }
 
 @include media-xl {
   .form-wrapper {
+    max-width: 82.5rem;
+  }
+
+  .container {
     max-width: 82.5rem;
   }
 }

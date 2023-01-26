@@ -1,0 +1,13 @@
+.trendings {
+  margin-top: 1.5rem;
+
+  .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13.375rem, 1fr));
+    gap: 1.5rem;
+  }
+
+  .paginate-wrapper {
+    margin: 2rem;
+  }
+}

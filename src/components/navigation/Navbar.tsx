@@ -6,8 +6,7 @@ import { ReactComponent as TVSeriesIcon } from "../../assets/svg/tvSeries-icon.s
 import { ReactComponent as SearchIcon } from "../../assets/svg/search-icon.svg";
 import IconText from "../text-image/IconText";
 
-// TODO: stopped here
-// finish navbar layout
+// TODO: fix transition when navbar-toggle is clicked
 
 const navlinks: INavlinks[] = [
   {
@@ -33,16 +32,22 @@ const navlinks: INavlinks[] = [
 ];
 
 const Navbar = () => {
+  const handleToggle = () => {
+    const navbarList = document.querySelector(".collapse") as HTMLDivElement;
+
+    navbarList.classList.toggle("show");
+  };
+
   return (
     <nav>
       <div className="container">
         <NavLink to="/">MoviesHub</NavLink>
 
-        <button className="navbar-toggle">
+        <button className="navbar-toggle" onClick={handleToggle}>
           <span className="navbar-toggle-icon"></span>
         </button>
 
-        <div className="navbar-collapse">
+        <div className="navbar-collapse collapse">
           <div className="navbar-items">
             {navlinks.map((navlink, index) => {
               return (

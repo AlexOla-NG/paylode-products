@@ -1,0 +1,13 @@
+.fade-in {
+  animation: fadeIn 500ms forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
