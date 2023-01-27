@@ -1,7 +1,8 @@
 export interface IUserData {
   id: number;
-  title: string;
+  title?: string;
   backdrop_path: string;
+  name?: string;
 }
 
 export interface IMovieInfo extends IUserData {

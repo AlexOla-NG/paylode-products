@@ -2,7 +2,7 @@ import noImageFound from "../../assets/images/no-image-found.webp";
 import { convertTitleCase } from "../shared/helpers";
 import { ICard } from "./ICard";
 
-const Card = ({ id, title, backdrop_path, handleNavigate }: ICard) => {
+const Card = ({ id, title, name, backdrop_path, handleNavigate }: ICard) => {
   let imageUrl = `https://image.tmdb.org/t/p/w500/${backdrop_path}`;
 
   const handleClick = () => {
@@ -18,7 +18,7 @@ const Card = ({ id, title, backdrop_path, handleNavigate }: ICard) => {
         />
       </span>
 
-      <h5 onClick={handleClick}>{title}</h5>
+      <h5 onClick={handleClick}>{title || name}</h5>
     </article>
   );
 };

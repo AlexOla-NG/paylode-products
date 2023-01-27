@@ -10,7 +10,6 @@ import Modal from "../components/modal/Modal";
 const MovieDetails = () => {
   const { id } = useParams();
   let location = useLocation();
-  console.log(location);
 
   const [movieInfo, setMovieInfo] = useState<IMovieInfo>();
   const [castInfo, setCastInfo] = useState<ICastInfo[]>([]);
@@ -48,7 +47,10 @@ const MovieDetails = () => {
 
       try {
         const response = await axios.get(url);
-        let results = response.data.results[0]["key"];
+        console.log(response);
+        let results = "";
+        if (response.data.results.length > 0)
+          results = response.data.results[0]["key"];
         setTrailerInfo(results);
       } catch (error) {
         console.error(error);

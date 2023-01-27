@@ -1,7 +1,8 @@
 import { IBadge } from "./IBadge";
 
 const Badge = ({ id, name, handleBadgeClick }: IBadge) => {
-  // STUB: add selected class onclick
+  // STUB: add selected class onclick,
+  // send badge id to parent component
   const handleClick = () => {
     const badgeList = document.querySelectorAll(".badge");
 
@@ -13,6 +14,7 @@ const Badge = ({ id, name, handleBadgeClick }: IBadge) => {
         badge.classList.add("selected-badge");
       });
     });
+    handleBadgeClick(id);
   };
 
   return (

@@ -44,7 +44,7 @@ const Trendings = () => {
 
   // STUB: navigate to moviedetails when clicked
   const handleNavigate = (id: number) => {
-    navigate(`${id}`);
+    navigate(`/${id}`);
   };
 
   return (

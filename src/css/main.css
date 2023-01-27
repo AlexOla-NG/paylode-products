@@ -420,6 +420,7 @@ nav .container .show {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
+  margin-bottom: 2rem;
 }
 .movies .card-wrapper {
   display: grid;
@@ -427,6 +428,21 @@ nav .container .show {
   gap: 1.5rem;
 }
 .movies .paginate-wrapper {
+  margin: 2rem;
+}
+
+.search {
+  margin-top: 1.5rem;
+}
+.search .search-wrapper {
+  margin-bottom: 1.5rem;
+}
+.search .card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13.375rem, 1fr));
+  gap: 1.5rem;
+}
+.search .paginate-wrapper {
   margin: 2rem;
 }
 
