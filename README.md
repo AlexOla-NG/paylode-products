@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [GitHub Pages](https://alexola-ng.github.io/Projects/easybank-landing-page-master/index.html)
+- Live Site URL: [MovieHub](https://paylode-products.vercel.app/movies)
 
 ## My process
 
