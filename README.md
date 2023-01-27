@@ -49,9 +49,6 @@ I still need more practice using grids, but I've come to appreciate the full con
 - [TypeScript Optional function in Interface](https://stackoverflow.com/questions/27522973/typescript-optional-function-in-interface) - This helped me figure out how to make functions optional in an interface. I really liked this pattern and will use it going forward.
 - [React: Prevent scroll when modal is open](https://stackoverflow.com/questions/54989513/react-prevent-scroll-when-modal-is-open) - This helped me toggle background scolling depending on modal open state. I really liked this resource and will use it going forward.
 - [How to Keep Active CSS Style After Click on Button](https://www.youtube.com/watch?v=zh1xus05Kl8) - This helped me easily persist a css class on an element. I really liked this pattern and will use it going forward.
-- [Using Placeholder On A Date Input In Angular](https://upmostly.com/angular/using-placeholder-on-a-date-input-in-angular) - This provided inspiration for the syntax I used to toggle the date input type so that it allowed for custom placeholder use. I really liked this pattern and will use it going forward.
-- [TypeScript: React useRef Hook](https://www.robinwieruch.de/typescript-react-useref/) - This helped me understand how to manipulate the useRef hook in TypeScript while trying to set the placeholder for the date input. I really liked this pattern and will use it going forward.
-- [How to detect a click outside a React component](https://blog.logrocket.com/detect-click-outside-react-component-how-to/) - This helped me understand how to detect click events outside a react component using the OutsideClickHandler library. I really liked this pattern and will use it going forward.
 
 ## Author
 
