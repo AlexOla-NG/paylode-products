@@ -11,22 +11,22 @@ import IconText from "../text-image/IconText";
 const navlinks: INavlinks[] = [
   {
     icon: <TrendingIcon />,
-    text: "trendings",
+    text: "Trendings",
     link: "/",
   },
   {
     icon: <VideoIcon />,
-    text: "movies",
+    text: "Movies",
     link: "movies",
   },
   {
     icon: <TVSeriesIcon />,
-    text: "tv series",
+    text: "TV Series",
     link: "tv-series",
   },
   {
     icon: <SearchIcon />,
-    text: "search",
+    text: "Search",
     link: "search",
   },
 ];
@@ -57,6 +57,7 @@ const Navbar = () => {
                   className={({ isActive }) =>
                     isActive ? "navbar-items-active" : ""
                   }
+                  onClick={handleToggle}
                 >
                   <IconText {...navlink} />
                 </NavLink>

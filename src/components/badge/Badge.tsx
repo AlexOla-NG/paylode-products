@@ -1,11 +1,25 @@
-import React from "react";
+import { IBadge } from "./IBadge";
 
-const badge = () => {
+const Badge = ({ id, name, handleBadgeClick }: IBadge) => {
+  // STUB: add selected class onclick
+  const handleClick = () => {
+    const badgeList = document.querySelectorAll(".badge");
+
+    badgeList.forEach((badge) => {
+      badge.addEventListener("click", () => {
+        document
+          .querySelector(".selected-badge")
+          ?.classList.remove("selected-badge");
+        badge.classList.add("selected-badge");
+      });
+    });
+  };
+
   return (
-    <h3 className="badge">
-      <span>badge</span>
-    </h3>
+    <a className="badge" onClick={handleClick}>
+      {name}
+    </a>
   );
 };
 
-export default badge;
+export default Badge;

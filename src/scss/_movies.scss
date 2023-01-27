@@ -1,0 +1,19 @@
+.movies {
+  margin-top: 1.5rem;
+
+  .badge-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .card-wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13.375rem, 1fr));
+    gap: 1.5rem;
+  }
+
+  .paginate-wrapper {
+    margin: 2rem;
+  }
+}

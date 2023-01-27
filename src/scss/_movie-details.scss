@@ -1,0 +1,58 @@
+.movie-info {
+  margin-top: 1.5rem;
+
+  h2,
+  h3 {
+    color: $secondary-color;
+    font-weight: weight(medium);
+    margin-bottom: 2.5rem;
+  }
+
+  &-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    .image-wrapper {
+      height: 31.25rem;
+      max-width: 21.875rem;
+
+      img {
+        border-radius: radius(regular);
+        object-fit: cover;
+        max-width: 100%;
+        height: 100%;
+      }
+    }
+
+    .text-wrapper {
+      font-size: size(fs-p);
+      margin: 3rem 0 1.5rem;
+
+      h3 {
+        font-size: size(fs-h3);
+
+      }
+
+      p:first-of-type {
+        line-height: 1.8;
+        margin-bottom: 1.5rem;
+      }
+
+      p:last-of-type {
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  .cast-wrapper {
+    margin: 2rem 0 1.5rem;
+
+    .cast-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(6.875rem, 1fr));
+      gap: 1.5rem;
+    }
+  }
+}

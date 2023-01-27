@@ -1,4 +1,4 @@
-@import 'resets', 'config', 'variables', 'loading', 'transition', 'card', 'button', 'image-text', 'icon-text', 'badge', 'paginate', 'searchbar', 'navbar', 'trendings', 'responsiveness'; // responsiveness should always be at the end
+@import 'resets', 'config', 'variables', 'loading', 'transition', 'card', 'button', 'image-text', 'icon-text', 'badge', 'paginate', 'searchbar', 'navbar', 'modal', 'trendings', 'movies', 'movie-details', 'responsiveness'; // responsiveness should always be at the end
 
 body {
   background-color: $primary-color;

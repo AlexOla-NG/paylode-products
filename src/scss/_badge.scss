@@ -1,12 +1,14 @@
 .badge {
+  background-color: $bagde-bg-color;
+  border-radius: radius(regular);
   color: $secondary-color;
   cursor: pointer;
   font-size: size(fs-badge);
+  font-weight: 700;
+  padding: 0.25rem 0.65rem;
   text-transform: capitalize;
+}
 
-  span {
-    background-color: $bagde-bg-color;
-    border-radius: radius(regular);
-    padding: 0.313rem 0.75rem;
-  }
+.selected-badge {
+  background-color: $btn-color;
 }

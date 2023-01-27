@@ -13,7 +13,7 @@ const Card = ({ id, title, backdrop_path, handleNavigate }: ICard) => {
       <span>
         <img
           src={backdrop_path === null ? noImageFound : imageUrl}
-          alt="not found"
+          alt={backdrop_path === null ? "not found" : title}
           loading="lazy"
         />
       </span>
