@@ -172,6 +172,11 @@
   font-weight: 500;
 }
 
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1019607843);
+}
+
 .btn {
   background-color: #00CE79;
   border: none;
@@ -278,27 +283,25 @@
 
 nav {
   background-color: #161616;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
   padding: 0.5rem 0;
   z-index: 2;
+  transition: height 0.35s ease;
 }
-nav .container {
+nav > .container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-nav .container > a {
+nav > .container > a {
   color: #FFFFFF;
   font-size: 1.25rem;
   font-weight: bold;
   padding: 0.3125rem 0;
 }
-nav .container .navbar-toggle {
+nav > .container .navbar-toggle {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.375rem;
   color: #FFFFFF;
@@ -306,7 +309,7 @@ nav .container .navbar-toggle {
   line-height: 1;
   padding: 0.25rem 0.75rem;
 }
-nav .container .navbar-toggle-icon {
+nav > .container .navbar-toggle-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
   background-repeat: no-repeat;
   background-position: center;
@@ -316,7 +319,7 @@ nav .container .navbar-toggle-icon {
   width: 1.5rem;
   vertical-align: middle;
 }
-nav .container .navbar-collapse .navbar-items {
+nav > .container .navbar-collapse .navbar-items {
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -324,17 +327,25 @@ nav .container .navbar-collapse .navbar-items {
   max-height: 100px;
   overflow-y: auto;
 }
-nav .container .navbar-collapse .navbar-items-active {
+nav > .container .navbar-collapse .navbar-items-active {
   color: #FFFFFF;
   display: flex;
   font-weight: bold;
 }
-nav .container .collapse:not(.show) {
+nav > .container .collapse:not(.show) {
   display: none;
 }
-nav .container .show {
+nav > .container .show {
   flex-basis: 100%;
   flex-grow: 1;
+}
+
+.nav-small {
+  height: 53px;
+}
+
+.nav-big {
+  height: 169px;
 }
 
 .ReactModalPortal .react-modal-overlay {

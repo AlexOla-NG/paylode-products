@@ -34,12 +34,18 @@ const navlinks: INavlinks[] = [
 const Navbar = () => {
   const handleToggle = () => {
     const navbarList = document.querySelector(".collapse") as HTMLDivElement;
+    const navbar = document.querySelector("nav") as HTMLDivElement;
 
-    navbarList.classList.toggle("show");
+    navbar.classList.toggle("nav-big");
+    navbar.classList.toggle("nav-small");
+
+    setTimeout(() => {
+      navbarList.classList.toggle("show");
+    }, 100);
   };
 
   return (
-    <nav>
+    <nav className="nav-small">
       <div className="container">
         <NavLink to="/">MoviesHub</NavLink>
 
