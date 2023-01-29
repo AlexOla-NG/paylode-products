@@ -144,6 +144,28 @@
     transform: scale(1);
   }
 }
+.skeleton {
+  -webkit-animation: skeleton-loading 1s linear infinite alternate;
+          animation: skeleton-loading 1s linear infinite alternate;
+}
+
+@-webkit-keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200deg, 20%, 70%);
+  }
+  100% {
+    background-color: hsl(200deg, 20%, 95%);
+  }
+}
+
+@keyframes skeleton-loading {
+  0% {
+    background-color: hsl(200deg, 20%, 70%);
+  }
+  100% {
+    background-color: hsl(200deg, 20%, 95%);
+  }
+}
 .card {
   background-color: #161616;
   border: 1px solid rgba(0, 0, 0, 0.1764705882);
@@ -527,6 +549,12 @@ nav > .container .show {
   }
   .container {
     max-width: 72.25rem;
+  }
+  .nav-big,
+.nav-small {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
   nav .container {
     justify-content: normal;

@@ -1,6 +1,5 @@
 import { Suspense, lazy } from "react";
 import { Routes, Route } from "react-router-dom";
-import Skeleton from "react-loading-skeleton";
 import Loading from "./components/shared/Loading";
 
 const Home = lazy(() => import("./views/Home"));
@@ -9,8 +8,6 @@ const Movies = lazy(() => import("./views/Movies"));
 const MovieDetails = lazy(() => import("./views/MovieDetails"));
 const TvSeries = lazy(() => import("./views/TvSeries"));
 const Search = lazy(() => import("./views/Search"));
-
-// TODO: add skeleton as fallback for navbar
 
 function App() {
   return (

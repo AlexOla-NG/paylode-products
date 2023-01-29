@@ -1,3 +1,4 @@
+import Skeleton from "react-loading-skeleton";
 import noImageFound from "../../assets/images/no-image-found.webp";
 import { ICard } from "./ICard";
 
@@ -18,7 +19,7 @@ const Card = ({ id, title, name, backdrop_path, handleNavigate }: ICard) => {
           />
         </span>
 
-        <h5 onClick={handleClick}>{title || name}</h5>
+        <h5 onClick={handleClick}>{title || name || <Skeleton />}</h5>
       </div>
     </article>
   );

@@ -13,9 +13,7 @@ const Trendings = () => {
 
   const [movies, setMovies] = useState<IUserData[]>([]);
   const [pageCount, setPageCount] = useState(0);
-  const [itemOffset, setItemOffset] = useState(0);
   const [pageNumber, setPageNumber] = useState(1);
-  const itemsPerPage = 20;
 
   // STUB: fetch data
   useEffect(() => {
@@ -37,9 +35,7 @@ const Trendings = () => {
 
   // STUB: change page when paginate button is clicked
   const handlePageClick = (event: any) => {
-    const newOffset = (event.selected * itemsPerPage) % pageCount;
     setPageNumber(event.selected + 1);
-    setItemOffset(newOffset);
   };
 
   // STUB: navigate to moviedetails when clicked

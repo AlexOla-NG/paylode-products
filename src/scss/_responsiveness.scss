@@ -30,6 +30,11 @@
     max-width: 72.25rem;
   }
 
+  .nav-big,
+  .nav-small {
+    height: fit-content;
+  }
+
   nav {
     .container {
       justify-content: normal;
