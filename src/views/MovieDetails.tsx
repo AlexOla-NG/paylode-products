@@ -47,7 +47,6 @@ const MovieDetails = () => {
 
       try {
         const response = await axios.get(url);
-        console.log(response);
         let results = "";
         if (response.data.results.length > 0)
           results = response.data.results[0]["key"];
@@ -66,8 +65,7 @@ const MovieDetails = () => {
   // or change in location
   useEffect(() => {
     isModal && (document.body.style.overflow = "hidden");
-    (!isModal || location.pathname !== `${id}`) &&
-      (document.body.style.overflow = "unset");
+    !isModal && (document.body.style.overflow = "unset");
   }, [isModal, location.pathname]);
 
   // STUB: toggle modal open or close

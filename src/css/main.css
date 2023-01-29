@@ -351,8 +351,8 @@ nav .container .show {
   left: 0;
   right: 0;
   bottom: 2.5rem;
-  border: 1px solid red;
   height: 100%;
+  margin: 0 auto;
   overflow: auto;
   outline: none;
   padding: 0 0.5rem 1rem;
@@ -502,7 +502,7 @@ nav .container .show {
   .container {
     max-width: 45rem;
   }
-  .ReactModalPortal .react-modal-overlay .trailer {
+  .ReactModalPortal .react-modal-overlay .react-modal-content {
     max-width: 31.25rem;
   }
 }
@@ -537,7 +537,7 @@ nav .container .show {
   .movie-info-summary {
     flex-direction: row;
   }
-  .ReactModalPortal .react-modal-overlay .trailer {
+  .ReactModalPortal .react-modal-overlay .react-modal-content {
     max-width: 50rem;
   }
 }
@@ -547,6 +547,13 @@ nav .container .show {
   }
   .container {
     max-width: 82.5rem;
+  }
+  .ReactModalPortal .react-modal-overlay .react-modal-content {
+    height: auto;
+    transform: translateY(20%);
+  }
+  .ReactModalPortal .react-modal-overlay .react-modal-content .trailer {
+    margin: 0;
   }
 }
 body {

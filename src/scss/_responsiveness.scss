@@ -9,7 +9,7 @@
 
   .ReactModalPortal {
     .react-modal-overlay {
-      .trailer {
+      .react-modal-content {
         max-width: 31.25rem;
       }
     }
@@ -64,7 +64,7 @@
 
   .ReactModalPortal {
     .react-modal-overlay {
-      .trailer {
+      .react-modal-content {
         max-width: 50rem;
       }
     }
@@ -78,6 +78,19 @@
 
   .container {
     max-width: 82.5rem;
+  }
+
+  .ReactModalPortal {
+    .react-modal-overlay {
+      .react-modal-content {
+        height: auto;
+        transform: translateY(20%);
+
+        .trailer {
+          margin: 0;
+        }
+      }
+    }
   }
 }
 
