@@ -1,5 +1,4 @@
 import noImageFound from "../../assets/images/no-image-found.webp";
-import { convertTitleCase } from "../shared/helpers";
 import { ICard } from "./ICard";
 
 const Card = ({ id, title, name, backdrop_path, handleNavigate }: ICard) => {
@@ -9,16 +8,18 @@ const Card = ({ id, title, name, backdrop_path, handleNavigate }: ICard) => {
     handleNavigate(id);
   };
   return (
-    <article className="card fade-in">
-      <span>
-        <img
-          src={backdrop_path === null ? noImageFound : imageUrl}
-          alt={backdrop_path === null ? "not found" : title}
-          loading="lazy"
-        />
-      </span>
+    <article className="fade-in">
+      <div className="card">
+        <span>
+          <img
+            src={backdrop_path === null ? noImageFound : imageUrl}
+            alt={backdrop_path === null ? "not found" : title}
+            loading="lazy"
+          />
+        </span>
 
-      <h5 onClick={handleClick}>{title || name}</h5>
+        <h5 onClick={handleClick}>{title || name}</h5>
+      </div>
     </article>
   );
 };

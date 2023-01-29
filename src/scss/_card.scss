@@ -8,7 +8,7 @@
   min-width: 13.5rem;
   padding: 1rem 1rem 1.5rem;
   text-align: center;
-
+  transition: transform 350ms;
 
   span {
     height: 21.875rem;
@@ -29,16 +29,7 @@
   }
 }
 
-// .card:hover {
-//   animation-name: popUp;
-//   animation-duration: 300ms;
-//   animation-iteration-count: 1;
-//   animation-timing-function: linear;
-// }
-
-
-// @keyframes popUp {
-//   50% {
-//     transform: scale(1.1);
-//   }
-// }
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 10px 10px 10px #0000001a;
+}
